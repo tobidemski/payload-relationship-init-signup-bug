@@ -13,8 +13,6 @@ export const MyCollection: CollectionConfig = {
     delete: () => true,
   },
   fields: [
-    // Email added by default
-    // Add more fields as needed
     {
       type: 'text',
       name: 'name',
