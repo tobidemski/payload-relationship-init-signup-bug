@@ -36,21 +36,18 @@ export default buildConfig({
       await payload.create({
         collection: 'mycollection',
         data: {
-          id: 1,
           name: 'Value1',
         },
       })
       await payload.create({
         collection: 'mycollection',
         data: {
-          id: 2,
           name: 'Value2',
         },
       })
       await payload.create({
         collection: 'mycollection',
         data: {
-          id: 3,
           name: 'Value3',
         },
       })
