@@ -122,6 +122,7 @@ export interface UserAuthOperations {
 export interface User {
   id: number;
   mycollectionrelationship?: (number | null) | Mycollection;
+  'seeded-data-text'?: string | null;
   updatedAt: string;
   createdAt: string;
   email: string;
@@ -236,6 +237,7 @@ export interface PayloadMigration {
  */
 export interface UsersSelect<T extends boolean = true> {
   mycollectionrelationship?: T;
+  'seeded-data-text'?: T;
   updatedAt?: T;
   createdAt?: T;
   email?: T;

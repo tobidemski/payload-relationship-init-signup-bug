@@ -26,5 +26,16 @@ export const Users: CollectionConfig = {
         create: () => true,
       },
     },
+    {
+      type: 'text',
+      name: 'seeded-data-text',
+      admin: {
+        readOnly: true,
+        components: {
+          Cell: '@/fields/seededData#SeededData',
+          Field: '@/fields/seededData#SeededData',
+        },
+      },
+    },
   ],
 }
